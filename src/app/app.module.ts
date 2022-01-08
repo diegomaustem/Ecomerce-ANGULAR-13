@@ -13,6 +13,9 @@ import { AllProductsComponent } from './all-products/all-products.component';
 import { RegisterproductComponent } from './registerproduct/registerproduct.component';
 import { ListProductsComponent } from './list-products/list-products.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ApiserviceService } from './apiservice.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +31,10 @@ import { ListProductsComponent } from './list-products/list-products.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
