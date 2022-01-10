@@ -4,6 +4,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { AllProductsComponent } from './all-products/all-products.component';
 import { ListProductsComponent } from './list-products/list-products.component';
 import { RegisterproductComponent } from './registerproduct/registerproduct.component';
+import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'listproducts', pathMatch: 'full'},
@@ -13,7 +14,9 @@ const routes: Routes = [
     children:[
       {path: 'listproducts', component: ListProductsComponent},
       {path: 'allproducts', component: AllProductsComponent},
-      {path: 'registerproduct', component: RegisterproductComponent}
+      {path: 'registerproduct', component: RegisterproductComponent},
+      {path: 'registerproduct/:id', component: RegisterproductComponent},
+      {path: 'product/:id', component: ProductComponent}
     ]
   }
 

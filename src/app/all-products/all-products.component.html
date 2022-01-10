@@ -1,74 +1,18 @@
-
 	<!-- All products -->
-
     <div class="adverts">
 		<div class="container">
 			<div class="row">
-
-				<div class="col-lg-4 advert_col">
-					
+				<div class="col-lg-4 advert_col" *ngFor = 'let product of allProducts'>
 					<!-- Advert Item -->
-
-					<div class="advert d-flex flex-row align-items-center justify-content-start">
-						
-						<div class="bestsellers_item discount">
-							<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-								<div class="bestsellers_image"><img src="assets/images/best_2.png" alt=""></div>
-								<div class="bestsellers_content">
-									<div class="bestsellers_category"><a href="#">Headphones</a></div>
-									<div class="bestsellers_name"><a href="product.html">Samsung J730F...</a></div>
-									<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-									<div class="bestsellers_price discount">$225<span>$300</span></div>
-								</div>
-							</div>
-							<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
-							<ul class="bestsellers_marks">
-								<li class="bestsellers_mark bestsellers_discount">-25%</li>
-								<li class="bestsellers_mark bestsellers_new">new</li>
-							</ul>
-						</div>
-
-						
-					</div>
-				</div>
-
-				<div class="col-lg-4 advert_col">
-					
-					<!-- Advert Item -->
-
 					<div class="advert d-flex flex-row align-items-center justify-content-start">
 						<div class="bestsellers_item discount">
 							<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-								<div class="bestsellers_image"><img src="assets/images/best_1.png" alt=""></div>
+								<div class="bestsellers_image"><a [routerLink]="['../product',product.id]"><img src="assets/images/best_2.png" alt=""></a></div>
 								<div class="bestsellers_content">
-									<div class="bestsellers_category"><a href="#">Headphones</a></div>
-									<div class="bestsellers_name"><a href="product.html">Xiaomi Redmi Note 4</a></div>
+									<div class="bestsellers_category"><a [routerLink]="['../product',product.id]">{{product.descricao}}</a></div>
+									<div class="bestsellers_name"><a [routerLink]="['../product',product.id]">{{product.nome}}</a></div>
 									<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-									<div class="bestsellers_price discount">$225<span>$300</span></div>
-								</div>
-							</div>
-							<div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-							<ul class="bestsellers_marks">
-								<li class="bestsellers_mark bestsellers_discount">-25%</li>
-								<li class="bestsellers_mark bestsellers_new">new</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 advert_col">
-					
-					<!-- Advert Item -->
-
-					<div class="advert d-flex flex-row align-items-center justify-content-start">
-						<div class="bestsellers_item">
-							<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-								<div class="bestsellers_image"><img src="assets/images/best_4.png" alt=""></div>
-								<div class="bestsellers_content">
-									<div class="bestsellers_category"><a href="#">Headphones</a></div>
-									<div class="bestsellers_name"><a href="product.html">Samsung Charm Gold</a></div>
-									<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-									<div class="bestsellers_price discount">$225<span>$300</span></div>
+									<div class="bestsellers_price discount">R$ {{product.preco}}<span>$300</span></div>
 								</div>
 							</div>
 							<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
@@ -79,7 +23,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

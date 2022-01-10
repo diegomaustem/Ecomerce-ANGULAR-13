@@ -1,49 +1,27 @@
-
-<div class="super_container">
-	
-	<!-- Contact Form -->
-
-	<div class="contact_form">
+	<!-- Single Product -->
+	<div class="single_product">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					<div class="contact_form_container">
-						<div class="contact_form_title">Cadastro de produto</div>
-
-						<form action="#" id="contact_form">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Produto Disponível</label>
-                            </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                <label class="form-check-label" for="flexSwitchCheckChecked">Produto Indisponível</label>
-                            </div>
-                            <br>
-
-							<div class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
-								<input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Nome do produto" required="required" data-error="Preencha o nome.">
-								<input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="Estoque " required="required" data-error="Preencha o estoque.">
-								<input type="text" id="contact_form_phone" class="contact_form_phone input_field" placeholder="Preço" required="required" data-error="Preencha o Preço.">
-							</div>
-							<div class="contact_form_text">
-								<textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Descrição Produto" required="required" data-error="Please, write us a message."></textarea>
-							</div>
-                            <br>
-
-                            <div class="input-group mb-3">
-                                <input type="file" class="form-control" id="">
-                            </div>
-
-                              
-							<div class="contact_form_button">
-								<button type="submit" class="button contact_submit_button">Salvar Produto</button>
-							</div>
-						</form>
-
+				<h1>{{attributeProduct.id}}</h1>
+				<!-- Selected Image -->
+				<div class="col-lg-5 order-lg-2 order-1">
+					<div class="image_selected"><img src="assets/images/single_4.jpg" alt=""></div>
+				</div>
+				<!-- Description -->
+				<div class="col-lg-5 order-3">
+					<div class="product_description">
+						<div class="product_category">{{attributeProduct.nome}}</div>
+						<div class="product_name">{{attributeProduct.descricao}}</div>
+						<div class="rating_r rating_r_4 product_rating"><i></i><i></i><i></i><i></i><i></i></div>
+						<div class="product_text"><p>{{attributeProduct.descricao}}</p></div>
+						<div class="envolve">
+							<div class="product_price">R$ {{attributeProduct.preco}}</div><br>
+							<button type="button" class="button cart_button">Adicionar ao carrinho</button>
+						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
-</div>
+

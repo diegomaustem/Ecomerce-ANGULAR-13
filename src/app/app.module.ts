@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,9 +11,11 @@ import { LayoutComponent } from './layout/layout.component';
 import { AllProductsComponent } from './all-products/all-products.component';
 import { RegisterproductComponent } from './registerproduct/registerproduct.component';
 import { ListProductsComponent } from './list-products/list-products.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { ApiserviceService } from './apiservice.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { ApiserviceService } from './apiservice.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ApiserviceService],
   bootstrap: [AppComponent]

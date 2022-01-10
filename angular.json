@@ -46,7 +46,10 @@
               "src/assets/styles/blog_styles.css",
               "src/assets/styles/blog_responsive.css",
               "src/assets/styles/main_styles.css",
-              "src/assets/styles/responsive.css"
+              "src/assets/styles/responsive.css",
+              "src/assets/styles/product_styles.css",
+              "src/assets/styles/product_responsive.css"
+
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -67,7 +70,9 @@
               "src/assets/js/shop_custom.js",
               "src/assets/js/jquery-3.3.1.min.js",
               "src/assets/plugins/slick-1.8.0/slick.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              "src/assets/styles/bootstrap4/bootstrap.min.js",
+              "src/assets/js/product_custom.js"
             ]
           },
           "configurations": {
