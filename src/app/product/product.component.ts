@@ -18,8 +18,7 @@ export class ProductComponent implements OnInit {
 
     this.getparamid = this.router.snapshot.paramMap.get('id');
     this.service.listarProduto(this.getparamid).subscribe((res)=>{
-        console.log(res,'Diegores==>');
-        this.attributeProduct = res.result;
+        this.attributeProduct = res.data[0];
     });
   }
 

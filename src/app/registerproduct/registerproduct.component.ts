@@ -13,21 +13,23 @@ export class RegisterproductComponent implements OnInit {
   constructor(private service:ApiserviceService, private router:ActivatedRoute) { }
 
   errormsg:any;
-  success:any;
+  successmsg:any;
   getparamid:any;
+
+  
+  event:any;
   
 
   ngOnInit(): void {
       this.getparamid = this.router.snapshot.paramMap.get('id');
-      this.service.getSingleData(this.getparamid).subscribe((res)=>{
-        console.log(res, 'res==>');  
+      this.service.listarProduto(this.getparamid).subscribe((res)=>{
         this.productForm.patchValue({
-            nome:res.result.nome,
-            imagem:res.result.imagem,
-            descricao:res.result.descricao,
-            estoque:res.result.estoque,
-            status:res.result.status,
-            preco:res.result.preco
+            nome:res.data[0].nome,
+            imagem:res.data[0].imagem,
+            descricao:res.data[0].descricao,
+            estoque:res.data[0].estoque,
+            status:res.data[0].status,
+            preco:res.data[0].preco
         });
       });
   }
@@ -45,14 +47,19 @@ export class RegisterproductComponent implements OnInit {
    
   });
 
+  onchange(){
+    console.log()
+  }
+
 
   productSubmit()
   {
     if(this.productForm.valid)
     {
       this.service.inserirProduto(this.productForm.value).subscribe((res)=>{
-        
-     });
+        this.productForm.reset();
+        this.successmsg = res.message;
+      });
 
     }
     else
@@ -69,8 +76,12 @@ export class RegisterproductComponent implements OnInit {
     if(this.productForm.valid)
     {
       this.service.alterarProduto(this.productForm.value, this.getparamid).subscribe((res)=>{
-          console.log(res,'resupdate');
+          this.successmsg = res.message;
       });
+    }
+    else
+    {
+          this.errormsg = 'O produto não pode ser alterado.'
     }
 
   }

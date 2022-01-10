@@ -12,8 +12,8 @@ export class ApiserviceService {
 
   // Conexão frontend com backend
 
-  apiUrl = 'http://localhost:3000/api/produto';
-  apiUrll = 'http://localhost:3000/api/produtos';
+  apiUrl = 'http://localhost:3000/produto';
+  apiUrll = 'http://localhost:3000/produtos';
 
  
   listarProduto(id:any):Observable<any>
@@ -32,7 +32,6 @@ export class ApiserviceService {
     return this._http.post(`${this.apiUrl}`, product);
   }
 
-
   alterarProduto(product:any, id:any):Observable<any>
   { 
     let ids = id;
@@ -45,11 +44,11 @@ export class ApiserviceService {
     return this._http.delete(`${this.apiUrl}/${ids}`);
   }
 
-  getSingleData(id:any):Observable<any>
+  /*getSingleData(id:any):Observable<any>
   {
     let ids = id;
     return this._http.get(`${this.apiUrl}/${ids}`);
-  }
+  }*/
 
 
 

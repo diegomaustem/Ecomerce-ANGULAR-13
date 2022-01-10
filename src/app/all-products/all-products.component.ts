@@ -20,8 +20,7 @@ export class AllProductsComponent implements OnInit {
   listarTodos()
   {
     this.service.listarTodos().subscribe((res)=>{
-      console.log(res,"res==>");
-      this.allProducts = res.result;
+      this.allProducts = res.data;
     });
   }
 

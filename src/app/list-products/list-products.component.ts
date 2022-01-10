@@ -20,19 +20,16 @@ export class ListProductsComponent implements OnInit {
 
   excluirProduto(id:any)
   {
-    console.log(id, 'deleteid==>');
     this.service.excluirProduto(id).subscribe((res)=>{
-        console.log(res,'deleteid==>');
         this.listarTodos();
-        this.successmsg = 'Produto deletado com sucesso!';
+        this.successmsg = 'Produto deletado com sucesso.';
     });
   }
 
   listarTodos()
   {
     this.service.listarTodos().subscribe((res)=>{
-      console.log(res,"res==>");
-      this.listProducts = res.result;
+      this.listProducts = res.data;
     });
   }
 
