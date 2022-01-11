@@ -1,0 +1,8 @@
+Informações sobre o projeto. 
+    O front foi feito em Angular CLI 13.1.2.
+
+Para rodar o Angular CLI, você precisa ter o Node instalado e o NPM em seu sistema.
+Sendo que o NPM vem junto com a instalação do Node.
+
+Em seguida navegue até a pasta raiz do projeto e executar o comando: npm start 
+para rodar o projeto. 
