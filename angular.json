@@ -49,12 +49,10 @@
               "src/assets/styles/responsive.css",
               "src/assets/styles/product_styles.css",
               "src/assets/styles/product_responsive.css"
-
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-
               "src/assets/styles/bootstrap4/popper.js",
               "src/assets/styles/bootstrap4/bootstrap.min.js",
               "src/assets/plugins/greensock/TweenMax.min.js",

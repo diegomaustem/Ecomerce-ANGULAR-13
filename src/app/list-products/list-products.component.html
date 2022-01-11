@@ -30,7 +30,7 @@
                                         <div class="cart_item_text">{{product.estoque}} uni</div>
                                     </div>
                                     <div class="cart_item_total cart_info_col" id="botoes">
-                                        <a class="btn btn-outline-dark" id="btn-editar" [routerLink]="['../registerproduct',product.id]">Editar</a>&nbsp;
+                                        <a class="btn btn-outline-dark" id="btn-editar" [routerLink]="['../updateproduct',product.id]">Editar</a>&nbsp;
                                         <button type="button" class="btn btn-outline-dark" (click)="excluirProduto(product.id)" id="btn-excluir">Excluir</button>
                                     </div>									
                                 </div>

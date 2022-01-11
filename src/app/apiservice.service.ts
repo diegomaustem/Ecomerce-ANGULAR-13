@@ -10,8 +10,6 @@ export class ApiserviceService {
   constructor( private _http:HttpClient ) { }
 
 
-  // Conexão frontend com backend
-
   apiUrl = 'http://localhost:3000/produto';
   apiUrll = 'http://localhost:3000/produtos';
 
@@ -43,13 +41,5 @@ export class ApiserviceService {
     let ids = id;
     return this._http.delete(`${this.apiUrl}/${ids}`);
   }
-
-  /*getSingleData(id:any):Observable<any>
-  {
-    let ids = id;
-    return this._http.get(`${this.apiUrl}/${ids}`);
-  }*/
-
-
 
 }

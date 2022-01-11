@@ -14,6 +14,7 @@ import { ListProductsComponent } from './list-products/list-products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiserviceService } from './apiservice.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 
 
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LayoutComponent,
     AllProductsComponent,
     RegisterproductComponent,
-    ListProductsComponent
+    ListProductsComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,
