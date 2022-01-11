@@ -40,15 +40,30 @@
               "src/assets/styles/shop_responsive.css",
               "src/assets/styles/cart_styles.css",
               "src/assets/styles/cart_responsive.css",
+<<<<<<< HEAD
 
               "src/assets/styles/bootstrap4/bootstrap.min.css",
               "src/assets/styles/contact_styles.css",
               "src/assets/styles/contact_responsive.css"
+=======
+              "src/assets/styles/bootstrap4/bootstrap.min.css",
+              "src/assets/styles/contact_styles.css",
+              "src/assets/styles/contact_responsive.css",
+              "src/assets/styles/blog_styles.css",
+              "src/assets/styles/blog_responsive.css",
+              "src/assets/styles/main_styles.css",
+              "src/assets/styles/responsive.css",
+              "src/assets/styles/product_styles.css",
+              "src/assets/styles/product_responsive.css"
+>>>>>>> ca0f16f3c20961196dd86a92c6883e671eeaf4d1
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
+<<<<<<< HEAD
 
+=======
+>>>>>>> ca0f16f3c20961196dd86a92c6883e671eeaf4d1
               "src/assets/styles/bootstrap4/popper.js",
               "src/assets/styles/bootstrap4/bootstrap.min.js",
               "src/assets/plugins/greensock/TweenMax.min.js",
@@ -64,7 +79,13 @@
               "src/assets/js/shop_custom.js",
               "src/assets/js/jquery-3.3.1.min.js",
               "src/assets/plugins/slick-1.8.0/slick.js",
+<<<<<<< HEAD
               "src/assets/js/custom.js"
+=======
+              "src/assets/js/custom.js",
+              "src/assets/styles/bootstrap4/bootstrap.min.js",
+              "src/assets/js/product_custom.js"
+>>>>>>> ca0f16f3c20961196dd86a92c6883e671eeaf4d1
             ]
           },
           "configurations": {

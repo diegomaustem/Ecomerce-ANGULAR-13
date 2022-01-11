@@ -1984,10 +1984,17 @@ select option
 .footer .logo
 {
 	top: auto;
+<<<<<<< HEAD
 	-webkit-transform: transform: none;
     -moz-transform: transform: none;
     -ms-transform: transform: none;
     -o-transform: transform: none;
+=======
+	-webkit-transform:none;
+    -moz-transform:none;
+    -ms-transform:none;
+    -o-transform:none;
+>>>>>>> ca0f16f3c20961196dd86a92c6883e671eeaf4d1
     transform: none;
 }
 .footer .logo a

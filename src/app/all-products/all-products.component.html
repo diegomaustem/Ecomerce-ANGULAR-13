@@ -1,0 +1,36 @@
+
+	<div class="adverts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 advert_col" *ngFor = 'let product of allProducts' id="all-products">
+			
+					<!-- Advert Item -->
+					<div class="advert d-flex flex-row align-items-center justify-content-start">
+		
+						<div class="bestsellers_item discount">
+							<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+								<div class="bestsellers_image"><a [routerLink]="['../product',product.id]"><img src="assets/images/featured_4.png" alt=""></a></div>
+								<div class="bestsellers_content">
+									<div class="bestsellers_category"><a [routerLink]="['../product',product.id]">{{product.descricao}}</a></div>
+									<div class="bestsellers_name"><a [routerLink]="['../product',product.id]">{{product.nome}}</a></div>
+									<div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+									<div class="bestsellers_price discount">R$ {{product.preco}}<span>$300</span></div>
+								</div>
+							</div>
+							<div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+							<ul class="bestsellers_marks">
+								<li class="bestsellers_mark bestsellers_discount">-25%</li>
+								<li class="bestsellers_mark bestsellers_new">new</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<br>
+
+			</div>
+		</div>
+	</div>
+
+
+	

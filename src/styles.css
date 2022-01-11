@@ -14,8 +14,29 @@
 
 #men {
     margin-left: 400px;
+<<<<<<< HEAD
+=======
+} 
+
+#cart-produtos {
+   margin-bottom: -62px;
+>>>>>>> ca0f16f3c20961196dd86a92c6883e671eeaf4d1
 }
 
 .copyright {
 	margin-bottom:0;
+<<<<<<< HEAD
 }
+=======
+}
+
+.status-produto {
+   margin-bottom: 4px;
+}
+
+#all-products {
+    
+    margin-bottom: 20px;
+}
+
+>>>>>>> ca0f16f3c20961196dd86a92c6883e671eeaf4d1

@@ -1,0 +1,64 @@
+
+	<div class="contact_form">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="contact_form_container">
+						<div class="contact_form_title">Cadastro de produto</div>
+
+						<div *ngIf="errormsg" class="alert alert-danger alert-dismissible fade show" role="alert">
+							{{errormsg}}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+
+						<div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+							{{successmsg}}
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+
+						<form [formGroup]="productForm">
+							<p class="status-produto">Status Produto</p>
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="radio" formControlName="status" name="flexRadioDefault" id="disponivel" value="0">
+								<label class="form-check-label" for="disponivel">
+									Disponível
+								</label>
+							  </div>
+							  <div class="form-check form-switch">
+								<input class="form-check-input" type="radio" formControlName="status" name="flexRadioDefault" id="indisponivel" value="1">
+								<label class="form-check-label" for="indisponivel">
+									Indisponível
+								</label>
+							  </div>
+                            <br>
+
+							<div class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
+								<input type="text" id="nome-product" class="input_field" formControlName="nome" placeholder="Nome do produto" required="required" data-error="Preencha o nome.">
+								<input type="text" id="stock" class="input_field" formControlName="estoque" placeholder="Estoque " required="required" data-error="Preencha o estoque.">
+								<input type="text" id="price" class="input_field" formControlName="preco" placeholder="Preço" required="required" data-error="Preencha o Preço.">
+							</div>
+							<div class="contact_form_text">
+								<textarea id="message" class="text_field contact_form_message" name="message" rows="4" formControlName="descricao" placeholder="Descrição Produto" required="required" data-error="Please, write us a message."></textarea>
+							</div>
+                            <br>
+
+                            <div class="input-group mb-3">
+                            	<input type="file" class="form-control" formControlName="imagem" id="img">
+                            </div>
+
+							<div class="contact_form_button" (click)="productSubmit()">
+								<button type="submit" class="button contact_submit_button">Salvar Produto</button>
+							</div>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
