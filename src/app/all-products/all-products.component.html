@@ -1,13 +1,15 @@
-	<!-- All products -->
-    <div class="adverts">
+
+	<div class="adverts">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 advert_col" *ngFor = 'let product of allProducts'>
+				<div class="col-lg-4 advert_col" *ngFor = 'let product of allProducts' id="all-products">
+			
 					<!-- Advert Item -->
 					<div class="advert d-flex flex-row align-items-center justify-content-start">
+		
 						<div class="bestsellers_item discount">
 							<div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-								<div class="bestsellers_image"><a [routerLink]="['../product',product.id]"><img src="assets/images/best_2.png" alt=""></a></div>
+								<div class="bestsellers_image"><a [routerLink]="['../product',product.id]"><img src="assets/images/featured_4.png" alt=""></a></div>
 								<div class="bestsellers_content">
 									<div class="bestsellers_category"><a [routerLink]="['../product',product.id]">{{product.descricao}}</a></div>
 									<div class="bestsellers_name"><a [routerLink]="['../product',product.id]">{{product.nome}}</a></div>
@@ -21,9 +23,14 @@
 								<li class="bestsellers_mark bestsellers_new">new</li>
 							</ul>
 						</div>
+
 					</div>
 				</div>
+				<br>
+
 			</div>
 		</div>
 	</div>
+
+
 	

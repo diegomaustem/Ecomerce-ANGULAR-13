@@ -20,11 +20,16 @@
    margin-bottom: -62px;
 }
 
-
 .copyright {
 	margin-bottom:0;
 }
 
-.status-produto{
+.status-produto {
    margin-bottom: 4px;
 }
+
+#all-products {
+    
+    margin-bottom: 20px;
+}
+
